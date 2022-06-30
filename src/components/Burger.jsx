@@ -10,7 +10,6 @@ const Burger = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) => {
     <div>
       {isClicked ? (
         <div className="burger">
-          {isClicked ? (
             <AiOutlineClose
               className="burger__button"
               onClick={() => setIsClicked(!isClicked)}
@@ -18,9 +17,6 @@ const Burger = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) => {
               role="presentation"
               area-hidden="true"
             />
-          ) : (
-            ""
-          )}
           <div className="burger__container">
             <ul className="burger__container__ul">
               <li
@@ -73,14 +69,14 @@ const Burger = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) => {
         </div>
       ) : (
         <div>
-        <GiHamburgerMenu
-          className="burger__button"
-          onClick={() => setIsClicked(!isClicked)}
-          onKeyDown={() => setIsClicked(!isClicked)}
-          role="presentation"
-          area-hidden="true"
-        />
-        <div className="burger__container__reverse">
+          <GiHamburgerMenu
+            className="burger__button"
+            onClick={() => setIsClicked(!isClicked)}
+            onKeyDown={() => setIsClicked(!isClicked)}
+            role="presentation"
+            area-hidden="true"
+          />
+          <div className="burger__container__reverse">
             <ul className="burger__container__ul">
               <li
                 className="burger__container__ul__li"
