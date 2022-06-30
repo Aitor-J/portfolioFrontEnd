@@ -16,11 +16,14 @@
     display: none;
   }
 
-  @media only screen and (min-height: 200px) and (max-height: 600px) {}
+  @media only screen and (min-height: 200px) and (max-height: 600px) {
+  }
 
-  @media only screen and (min-width: 1025px) and (max-width: 1224px) {}
+  @media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  }
 
-  @media only screen and (min-width: 1225px) {}
+  @media only screen and (min-width: 1225px) {
+  }
 
   &__container {
     padding: 2rem 0 2rem 0;
