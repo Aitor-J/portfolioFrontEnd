@@ -1,0 +1,87 @@
+.burger {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+
+
+    @media only screen and (min-width: 821px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1224px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1225px) {
+        display: none;
+    }
+
+    &__container {
+        position: fixed;
+        height: 100%;
+        width: 55%;
+        right: 0;
+        background-color: rgb(33, 33, 33);
+
+
+        &__ul {
+            margin-left: 4rem;
+            margin-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 51;
+            list-style: none;
+
+            &__li {
+                font-family: $fontText;
+                font-size: 2rem;
+                color: rgb(255, 255, 255);
+                text-align: left;
+                padding-left: 4rem;
+                padding-top: 2.6rem;
+                z-index: 52;
+            }
+        }
+    }
+
+
+    &__button {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 52;
+        font-size: 4rem;
+        cursor: pointer;
+
+        @media only screen and (min-width: 821px) and (max-width: 1024px) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1224px) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 1225px) {
+            display: none;
+        }
+    }
+}
+
+.huge {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+}
+
+.menu {
+    position: absolute;
+    top: 30px;
+    transform: translateY(20px);
+}
