@@ -10,7 +10,15 @@ import ReactPlayer from "react-player";
 import PropTypes from "prop-types";
 import handleScroll from "../utils/scroll";
 
-const Navbar = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, isActive, setIsActive }) => {
+const Navbar = ({
+  homeRef,
+  aboutRef,
+  skillsRef,
+  projectsRef,
+  contactRef,
+  isActive,
+  setIsActive,
+}) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const handleChange = () => {
     setIsPlaying(!isPlaying);
@@ -18,25 +26,39 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, isActiv
   return (
     <div className="navbar">
       <ReactPlayer
-                url="https://soundcloud.com/fabfab2/waves-and-birds"
-                width="0"
-                height="0"
-                playing={isPlaying}
-                volume={0.3}
-              />
+        url="https://soundcloud.com/fabfab2/waves-and-birds"
+        width="0"
+        height="0"
+        playing={isPlaying}
+        volume={0.3}
+      />
       <div className="navbar__container">
         <ul className="navbar__container__ul">
-          <li className="navbar__container__ul__li"            onClick={() => setIsActive(!isActive)}
+          <li
+            className="navbar__container__ul__li"
+            onClick={() => setIsActive(!isActive)}
             onKeyDown={() => setIsActive(!isActive)}
             role="presentation"
-            area-hidden="true">
-           {isActive ?  (<IoMdMoon className="navbar__container__ul__icon" />) :  (<FaSun className="navbar__container__ul__icon" />)}
+            area-hidden="true"
+          >
+            {isActive ? (
+              <IoMdMoon className="navbar__container__ul__icon" />
+            ) : (
+              <FaSun className="navbar__container__ul__icon" />
+            )}
             Theme
           </li>
-          <li className="navbar__container__ul__li" onClick={handleChange}
+          <li
+            className="navbar__container__ul__li"
+            onClick={handleChange}
             area-hidden="true"
-            role="presentation">
-           {isPlaying ? (<BsDisc className="navbar__container__ul__icon__rotate" />) : (<BsDisc className="navbar__container__ul__icon" />)} 
+            role="presentation"
+          >
+            {isPlaying ? (
+              <BsDisc className="navbar__container__ul__icon__rotate" />
+            ) : (
+              <BsDisc className="navbar__container__ul__icon" />
+            )}
             Sound
           </li>
           <li
@@ -102,7 +124,7 @@ Navbar.propTypes = {
   projectsRef: PropTypes.func.isRequired,
   contactRef: PropTypes.func.isRequired,
   isActive: PropTypes.func.isRequired,
-  setIsActive: PropTypes.func.isRequired
+  setIsActive: PropTypes.func.isRequired,
 };
 
 export default Navbar;
