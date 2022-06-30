@@ -1,6 +1,5 @@
 .burger {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   width: 100%;
   z-index: 50;
@@ -25,9 +24,41 @@
   &__container {
     position: fixed;
     height: 100%;
-    width: 55%;
+    width: 25rem;
     right: 0;
     background-color: rgb(33, 33, 33);
+    transform: translateX(25rem);
+    animation: swip 0.3s normal forwards;
+
+    @keyframes swip {
+      from {
+        transform: translateX(100rem);
+      }
+
+      to {
+        transform: translateX(0rem);
+      }
+    }
+
+    &__reverse {
+      position: fixed;
+      height: 100%;
+      width: 25rem;
+      right: 0;
+      background-color: rgb(33, 33, 33);
+      transform: translateX(25rem);
+      animation: swipReverse 1s normal forwards;
+
+      @keyframes swipReverse {
+        from {
+          transform: translateX(0rem);
+        }
+
+        to {
+          transform: translateX(100rem);
+        }
+      }
+    }
 
     &__ul {
       margin-left: 4rem;
@@ -70,16 +101,4 @@
       display: none;
     }
   }
-}
-
-.huge {
-  height: 100vh;
-  width: 100vw;
-  background-color: yellow;
-}
-
-.menu {
-  position: absolute;
-  top: 30px;
-  transform: translateY(20px);
 }
