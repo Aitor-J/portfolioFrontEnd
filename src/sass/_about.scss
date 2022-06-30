@@ -1,4 +1,61 @@
 .about {
   background-color: #101010;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__img {
+      height: 20rem;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 20rem;
+      margin-left: 4rem;
+
+      &__h1 {
+        color: white;
+        font-family: $fontText;
+        font-size: 4rem;
+      }
+
+      &__p {
+        color: rgb(170, 170, 170);
+        font-family: $fontText;
+        font-size: 1.3rem;
+        width: 38rem;
+        line-height: 2rem;
+      }
+
+      &__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__li {
+          color: #f9024d;
+          list-style: none;
+          font-size: 1.4rem;
+          font-family: $fontText;
+          margin-right: 3rem;
+          margin-top: 3rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
