@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
-//ALL IN ONEPAGE USING USEREF
+// ALL IN ONEPAGE USING USEREF
 const OnePage = () => {
   return (
     <div className="onePage">
