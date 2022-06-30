@@ -17,7 +17,7 @@ const OnePage = () => {
   const [isActive, setIsActive] = useState(true);
   return (
     <div className="onePage">
-      <Burger   
+      <Burger
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
@@ -25,30 +25,30 @@ const OnePage = () => {
         contactRef={contactRef}
         setIsActive={setIsActive}
         isActive={isActive}
-        />
-      <Navbar 
-      homeRef={homeRef}
-      aboutRef={aboutRef}
-      skillsRef={skillsRef}
-      projectsRef={projectsRef}
-      contactRef={contactRef}
-      setIsActive={setIsActive}
-      isActive={isActive}
       />
-       <div ref={homeRef}>
-      <Home />
+      <Navbar
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+        setIsActive={setIsActive}
+        isActive={isActive}
+      />
+      <div ref={homeRef}>
+        <Home />
       </div>
       <div ref={aboutRef}>
-      <About />
+        <About />
       </div>
       <div ref={skillsRef}>
-      <Skills />
+        <Skills />
       </div>
       <div ref={projectsRef}>
-      <Projects />
+        <Projects />
       </div>
       <div ref={contactRef}>
-      <Contact />
+        <Contact />
       </div>
     </div>
   );
