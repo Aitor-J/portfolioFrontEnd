@@ -32,4 +32,10 @@ Voici un template déjà configuré pour vos projets front-end.
 
 -npm install react-icons --save
 
+### React Player Music
+
 --npm install react-player
+
+### React Reveal
+
+-npm i react-reveal --save --force
