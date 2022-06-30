@@ -30,55 +30,59 @@ const Burger = ({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) => {
         </div>
       )}
 
-<div className={isClicked ? "burger__container" : "burger__container__reverse"}>
-            <ul className="burger__container__ul">
-              <li
-                className="burger__container__ul__li"
-                onClick={() => handleScroll(homeRef)}
-                area-hidden="true"
-                onKeyDown={() => handleScroll(homeRef)}
-                role="presentation"
-              >
-                Home
-              </li>
-              <li
-                className="burger__container__ul__li"
-                onClick={() => handleScroll(aboutRef)}
-                area-hidden="true"
-                onKeyDown={() => handleScroll(aboutRef)}
-                role="presentation"
-              >
-                About
-              </li>
-              <li
-                className="burger__container__ul__li"
-                onClick={() => handleScroll(skillsRef)}
-                area-hidden="true"
-                onKeyDown={() => handleScroll(skillsRef)}
-                role="presentation"
-              >
-                Skills
-              </li>
-              <li
-                className="burger__container__ul__li"
-                onClick={() => handleScroll(projectsRef)}
-                area-hidden="true"
-                onKeyDown={() => handleScroll(projectsRef)}
-                role="presentation"
-              >
-                Projects
-              </li>
-              <li
-                className="burger__container__ul__li"
-                onClick={() => handleScroll(contactRef)}
-                area-hidden="true"
-                onKeyDown={() => handleScroll(contactRef)}
-                role="presentation"
-              >
-                Contact
-              </li>
-            </ul>
-          </div>
+      <div
+        className={
+          isClicked ? "burger__container" : "burger__container__reverse"
+        }
+      >
+        <ul className="burger__container__ul">
+          <li
+            className="burger__container__ul__li"
+            onClick={() => handleScroll(homeRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(homeRef)}
+            role="presentation"
+          >
+            Home
+          </li>
+          <li
+            className="burger__container__ul__li"
+            onClick={() => handleScroll(aboutRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(aboutRef)}
+            role="presentation"
+          >
+            About
+          </li>
+          <li
+            className="burger__container__ul__li"
+            onClick={() => handleScroll(skillsRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(skillsRef)}
+            role="presentation"
+          >
+            Skills
+          </li>
+          <li
+            className="burger__container__ul__li"
+            onClick={() => handleScroll(projectsRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(projectsRef)}
+            role="presentation"
+          >
+            Projects
+          </li>
+          <li
+            className="burger__container__ul__li"
+            onClick={() => handleScroll(contactRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(contactRef)}
+            role="presentation"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
