@@ -18,11 +18,12 @@ const About = () => {
             vel accusamus? Repudiandae, sed blanditiis.
           </p>
           <ul className="about__container__text__ul">
-            <li className="about__container__text__ul__li">Hobbies</li>
+            <li className="about__container__text__ul__li__span">Hobbies</li>
             <li className="about__container__text__ul__li">Soft skills</li>
             <li className="about__container__text__ul__li">Personnality</li>
             <li className="about__container__text__ul__li">Travels</li>
           </ul>
+          <p className="about__container__text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et molestiae ad dolorem, tenetur voluptate corrupti psum dolor sit amet, consectetur adipisicing elit. Est et molestiae ad dolorem, tenetur voluptate corrupti </p>
         </div>
       </div>
     </div>
