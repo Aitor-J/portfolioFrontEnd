@@ -1,5 +1,5 @@
 import React from "react";
-
+//ca marche
 const About = () => {
   return (
     <div className="about">
@@ -23,7 +23,12 @@ const About = () => {
             <li className="about__container__text__ul__li">Personnality</li>
             <li className="about__container__text__ul__li">Travels</li>
           </ul>
-          <p className="about__container__text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et molestiae ad dolorem, tenetur voluptate corrupti psum dolor sit amet, consectetur adipisicing elit. Est et molestiae ad dolorem, tenetur voluptate corrupti </p>
+          <p className="about__container__text__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et
+            molestiae ad dolorem, tenetur voluptate corrupti psum dolor sit
+            amet, consectetur adipisicing elit. Est et molestiae ad dolorem,
+            tenetur voluptate corrupti{" "}
+          </p>
         </div>
       </div>
     </div>
